@@ -31,10 +31,10 @@ for(var i of divs){
         if(this.innerHTML == ""){
             if(counter%2==0){
                this.innerHTML = "X"
+               this.style.pointerEvents = "none"
                div_x.style.borderBottom = "1px solid var(--gray)"
                player_x.style.color = "var(--white)"
                turn_x.innerHTML = ""
-
                div_o.style.borderBottom = "1px solid var(--pink)"
                player_o.style.color = "var(--pink)"
                turn_o.innerHTML = "Turn"
@@ -42,10 +42,10 @@ for(var i of divs){
             }
             else{
                 this.innerHTML = "O"
+                this.style.pointerEvents = "none"
                 div_o.style.borderBottom = "1px solid var(--gray)"
                 player_o.style.color = "var(--white)"
                 turn_o.innerHTML = ""
-
                 div_x.style.borderBottom = "1px solid var(--pink)"
                 player_x.style.color = "var(--pink)"
                 turn_x.innerHTML = "Turn"
